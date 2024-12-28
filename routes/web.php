@@ -17,6 +17,10 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
                 Route::get('/', App\Livewire\Pages\Dashboard\Person\Index::class)->name('index');
                 Route::get('create', App\Livewire\Pages\Dashboard\Person\Create::class)->name('create');
             });
+            Route::name('access-control.')->prefix('access-control')->group(function () {
+                Route::get('/', App\Livewire\Pages\Dashboard\AccessControl\Index::class)->name('index');
+                // Route::get('create', App\Livewire\Pages\Dashboard\Person\Create::class)->name('create');
+            });
         });
     });
 });

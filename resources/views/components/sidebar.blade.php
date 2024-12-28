@@ -1,4 +1,4 @@
-<button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 ">
+{{-- <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 ">
     <span class="sr-only">Open sidebar</span>
     <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
     <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
@@ -27,32 +27,223 @@
                  <span class="flex-1 ms-3 text-large whitespace-nowrap">Person</span>
             </x-side-link>
           </li>
-          {{-- <li>
-             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
-                   <path d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z"/>
-                </svg>
-                <span class="flex-1 ms-3 whitespace-nowrap">Products</span>
-             </a>
-          </li>
-          <li>
-             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
-                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"/>
-                </svg>
-                <span class="flex-1 ms-3 whitespace-nowrap">Sign In</span>
-             </a>
-          </li>
-          <li>
-             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                   <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z"/>
-                   <path d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z"/>
-                   <path d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z"/>
-                </svg>
-                <span class="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
-             </a>
-          </li> --}}
+
        </ul>
     </div>
- </aside>
+ </aside> --}}
+
+<nav class="navbar bg-base-100 max-sm:rounded-box max-sm:shadow sm:border-b border-base-content/25 sm:z-[1] relative">
+    <button type="button" class="btn btn-text max-sm:btn-square sm:hidden me-2" aria-haspopup="dialog"
+        aria-expanded="false" aria-controls="default-sidebar" data-overlay="#default-sidebar">
+        <span class="icon-[tabler--menu-2] size-5"></span>
+    </button>
+    <div class="flex flex-1 items-center">
+        <a class="link text-base-content/90 link-neutral text-xl font-semibold no-underline" href="#">
+            FlyonUI
+        </a>
+    </div>
+    <div class="navbar-end flex items-center gap-4">
+        <div class="dropdown relative inline-flex [--auto-close:inside] [--offset:8] [--placement:bottom-end]">
+            <button id="dropdown-scrollable" type="button"
+                class="dropdown-toggle btn btn-text btn-circle dropdown-open:bg-base-content/10 size-10"
+                aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                <div class="indicator">
+                    <span class="indicator-item bg-error size-2 rounded-full"></span>
+                    <span class="icon-[tabler--bell] text-base-content size-[1.375rem]"></span>
+                </div>
+            </button>
+            <div class="dropdown-menu dropdown-open:opacity-100 hidden" role="menu" aria-orientation="vertical"
+                aria-labelledby="dropdown-scrollable">
+                <div class="dropdown-header justify-center">
+                    <h6 class="text-base-content/90 text-base">Notifications</h6>
+                </div>
+                <div
+                    class="vertical-scrollbar horizontal-scrollbar rounded-scrollbar text-base-content/80 max-h-56 overflow-auto max-md:max-w-60">
+                    <div class="dropdown-item">
+                        <div class="avatar away-bottom">
+                            <div class="w-10 rounded-full">
+                                <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-1.png" alt="avatar 1" />
+                            </div>
+                        </div>
+                        <div class="w-60">
+                            <h6 class="truncate text-base">Charles Franklin</h6>
+                            <small class="text-base-content/50 truncate">Accepted your connection</small>
+                        </div>
+                    </div>
+                    <div class="dropdown-item">
+                        <div class="avatar">
+                            <div class="w-10 rounded-full">
+                                <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-2.png" alt="avatar 2" />
+                            </div>
+                        </div>
+                        <div class="w-60">
+                            <h6 class="truncate text-base">Martian added moved Charts & Maps task to the done board.
+                            </h6>
+                            <small class="text-base-content/50 truncate">Today 10:00 AM</small>
+                        </div>
+                    </div>
+                    <div class="dropdown-item">
+                        <div class="avatar online-bottom">
+                            <div class="w-10 rounded-full">
+                                <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-8.png" alt="avatar 8" />
+                            </div>
+                        </div>
+                        <div class="w-60">
+                            <h6 class="truncate text-base">New Message</h6>
+                            <small class="text-base-content/50 truncate">You have new message from Natalie</small>
+                        </div>
+                    </div>
+                    <div class="dropdown-item">
+                        <div class="avatar placeholder">
+                            <div class="bg-neutral text-neutral-content w-10 rounded-full p-2">
+                                <span class="icon-[tabler--user] size-full"></span>
+                            </div>
+                        </div>
+                        <div class="w-60">
+                            <h6 class="truncate text-base">Application has been approved 🚀</h6>
+                            <small class="text-base-content/50 text-wrap">Your ABC project application has been
+                                approved.</small>
+                        </div>
+                    </div>
+                    <div class="dropdown-item">
+                        <div class="avatar">
+                            <div class="w-10 rounded-full">
+                                <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-10.png" alt="avatar 10" />
+                            </div>
+                        </div>
+                        <div class="w-60">
+                            <h6 class="truncate text-base">New message from Jane</h6>
+                            <small class="text-base-content/50 text-wrap">Your have new message from Jane</small>
+                        </div>
+                    </div>
+                    <div class="dropdown-item">
+                        <div class="avatar">
+                            <div class="w-10 rounded-full">
+                                <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-3.png" alt="avatar 3" />
+                            </div>
+                        </div>
+                        <div class="w-60">
+                            <h6 class="truncate text-base">Barry Commented on App review task.</h6>
+                            <small class="text-base-content/50 truncate">Today 8:32 AM</small>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="dropdown-footer justify-center gap-1">
+                    <span class="icon-[tabler--eye] size-4"></span>
+                    View all
+                </a>
+            </div>
+        </div>
+        <div class="dropdown relative inline-flex [--auto-close:inside] [--offset:8] [--placement:bottom-end]">
+            <button id="dropdown-scrollable" type="button" class="dropdown-toggle flex items-center"
+                aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                <div class="avatar">
+                    <div class="size-9.5 rounded-full">
+                        <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-1.png" alt="avatar 1" />
+                    </div>
+                </div>
+            </button>
+            <ul class="dropdown-menu dropdown-open:opacity-100 hidden min-w-60" role="menu"
+                aria-orientation="vertical" aria-labelledby="dropdown-avatar">
+                <li class="dropdown-header gap-2">
+                    <div class="avatar">
+                        <div class="w-10 rounded-full">
+                            <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-1.png" alt="avatar" />
+                        </div>
+                    </div>
+                    <div>
+                        <h6 class="text-base-content/90 text-base font-semibold">John Doe</h6>
+                        <small class="text-base-content/50">Admin</small>
+                    </div>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">
+                        <span class="icon-[tabler--user]"></span>
+                        My Profile
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">
+                        <span class="icon-[tabler--settings]"></span>
+                        Settings
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">
+                        <span class="icon-[tabler--receipt-rupee]"></span>
+                        Billing
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">
+                        <span class="icon-[tabler--help-triangle]"></span>
+                        FAQs
+                    </a>
+                </li>
+                <li class="dropdown-footer gap-2">
+                    <a class="btn btn-error btn-soft btn-block" href="#">
+                        <span class="icon-[tabler--logout]"></span>
+                        Sign out
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<aside id="default-sidebar"
+    class="overlay sm:shadow-none overlay-open:translate-x-0 drawer drawer-start hidden max-w-64 sm:absolute sm:z-0 sm:flex sm:translate-x-0 pt-16"
+    role="dialog" tabindex="-1">
+    <div class="drawer-body px-2 pt-4">
+        <ul class="menu p-0">
+            <li>
+                <a href="#">
+                    <span class="icon-[tabler--home] size-5"></span>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-[tabler--user] size-5"></span>
+                    Account
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-[tabler--message] size-5"></span>
+                    Notifications
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-[tabler--mail] size-5"></span>
+                    Email
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-[tabler--calendar] size-5"></span>
+                    Calendar
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-[tabler--shopping-bag] size-5"></span>
+                    Product
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-[tabler--login] size-5"></span>
+                    Sign In
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-[tabler--logout-2] size-5"></span>
+                    Sign Out
+                </a>
+            </li>
+        </ul>
+    </div>
+</aside>

@@ -2,16 +2,13 @@
 
 namespace App\Livewire\Pages\Dashboard\Person;
 
-use Livewire\Attributes\Title;
 use App\Models\Person;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 use Livewire\Component;
 use Livewire\WithPagination;
 
-#[Title('Person')]
-class Index extends Component
-
+class PersonTable extends Component
 {
     use WithPagination;
 
@@ -19,32 +16,7 @@ class Index extends Component
     public $sortField = 'id'; // Default kolom sorting
     public $sortDirection = 'asc'; // Arah sorting
 
-    public $modalData = null;
-    public $showModal = false;
-
-    protected $paginationTheme = 'custom-pagination';
-
-    // Method untuk membuka modal dan mengisi data
-    public function openModal($personId)
-    {
-        $person = Person::find($personId);
-
-        if (!$person) {
-            session()->flash('error', 'Person not found.');
-            return;
-        }
-
-        $this->modalData = $person;
-        $this->showModal = true;
-    }
-
-
-    public function closeModal()
-    {
-        $this->modalData = null;
-        $this->showModal = false;
-    }
-
+    protected $paginationTheme = 'custom-pagination'; // Gunakan tema bootstrap (opsional)
 
     public function updatingSearch()
     {
@@ -70,10 +42,6 @@ class Index extends Component
             ->orderBy($this->sortField, $this->sortDirection)
             ->paginate(10);
 
-        return view('livewire.pages.dashboard.person.index', ['data' => $data]);
+        return view('livewire.pages.dashboard.person.person-table', ['data' => $data]);
     }
-    // public function render()
-    // {
-    //     return view('livewire.pages.dashboard.person.index');
-    // }
 }
